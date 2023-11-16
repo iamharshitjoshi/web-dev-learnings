@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(241, 190, 145);
+}
+
+div{
+    background-color: brown;
+    /* width: 100px;
+    height: 100px; */
+    /* for changing the size of box with layout we use vw or vh */
+    /* block - 400px  & original layout - 1920px means 400/1920 = 21 which is 21% of original layout*/
+    width: 21vw;
+    height: 21vw;
+    margin: 50px;
+
+}
+
+@media all and (max-width:1000px) {
+    body{
+        background-color: rgb(71, 71, 114);
+    }
+    div{
+        background-color: rgb(156, 237, 18);
+    }
+}

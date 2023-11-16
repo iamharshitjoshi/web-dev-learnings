@@ -1,0 +1,32 @@
+
+body{
+    margin: 0;
+    background-color: black;
+    display: grid;
+
+    /* column divede jitne px */
+    /* grid-template-columns: 100px 100px 100px 100px; */
+
+    /* grid-template-columns: 100px 200px 50px; */
+    /* grid-template-rows: 100px 200px 300px; */
+
+    /* in % */
+    /* grid-template-columns: 40% 30% 30%; */
+    /* OR */
+    /* grid-template-columns: 4fr 3fr 3fr; */
+    /* OR */
+    grid-template-columns: repeat(3, 1fr);
+    /* and repeat(3, 100px) */
+
+    /*  if we have to add margin but overflow*/
+    grid-gap: 10px;
+}
+
+.box{
+    /* width: 100px; */
+    /* height: 100px; */
+    color: black;
+    background-color: rgb(9, 255, 0);
+    font: 100 2rem cursive;
+    border: 2px solid red;
+}

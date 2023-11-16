@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    
+}
+
+.box{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    font: bold 2rem cursive;
+    border: 2px solid red;
+    margin: 2vmax;
+    color: white;
+
+    /* shorthand  */
+    /* transition: background-color 1s ease-in 1s, color 1s ease-in 1s; */
+    /* transition: all 1s ease-in 1s; */
+
+    /* apply on all color, background color etc */
+    /* transition: all 0.5s;  */
+
+    /* smooth */
+    /* transition-property: background-color;
+    transition-duration: 1s; */
+
+    /* starting - ease and end hote hote speed increase */
+    /* transition-timing-function: ease-in; */
+    
+    /* starting speed and end - ease se */
+    /* transition-timing-function: ease-out; */
+
+    /* end and start slow */
+    /* transition-timing-function: ease-in-out; */
+
+    /* delay on transition */
+    /* transition-delay: 2s; */
+}
+
+ @keyframes bannermove {
+    0% {
+        background-color: red;
+        transform: scale(2);
+    }
+
+    50% {
+        border-radius: 100%;
+        background-color: blue;
+    }
+
+    100% {
+        background-color: black;
+        transform: scale(20);
+    }
+}
+
+#box1{
+    animation: bannermove 2s linear 1s infinite alternate;
+}
+
